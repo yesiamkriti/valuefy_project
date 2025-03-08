@@ -1,0 +1,41 @@
+
+services:
+  backend:
+    build: 
+      context: ./voice-recorder-backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/SpeechDB
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: always  # Auto-restart if it crashes
+
+  frontend:
+    build:
+      context: ./voice-recorder-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: always  # Auto-restart if it crashes
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always  # Auto-restart if it crashes
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh mongodb:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mongo_data:

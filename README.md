@@ -97,3 +97,41 @@ Professionals often struggle to capture action items and key discussion points d
 ## License
 This project is licensed under the MIT License.
 
+project-root/
+│
+├── backend/
+│   ├── server.js              # Express server
+│   ├── config/
+│   │   ├── db.js             # MongoDB connection
+│   ├── models/
+│   │   ├── Task.js           # Task schema
+│   │   ├── CalendarEvent.js  # Calendar schema
+│   ├── routes/
+│   │   ├── upload.js         # Audio upload route
+│   │   ├── tasks.js          # Task management route
+│   │   ├── calendar.js       # Calendar management route
+│   ├── services/
+│   │   ├── speechToText.py   # Whisper speech-to-text service
+│   │   ├── nlpExtraction.py  # NLP extraction service
+│   ├── uploads/              # Uploaded audio files
+│   ├── package.json          # Backend dependencies
+│   ├── .env                  # Environment variables
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ToDoList.js   # To-Do List component
+│   │   │   ├── Recorder.js   # Audio Recorder component
+│   │   │   ├── Calendar.js   # Custom Calendar component
+│   │   ├── pages/
+│   │   │   ├── Home.js       # Home page
+│   │   │   ├── Tasks.js      # Task management page
+│   │   │   ├── Calendar.js   # Calendar page
+│   │   ├── App.js            # Main App component
+│   │   ├── index.js          # React entry point
+│   ├── public/
+│   ├── package.json          # Frontend dependencies
+│   ├── .env                  # Environment variables
+│
+├── README.md                 # Project documentation
+

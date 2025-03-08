@@ -1,0 +1,4 @@
+openai-whisper
+pymongo
+python-dotenv
+spacy

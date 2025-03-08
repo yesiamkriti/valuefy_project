@@ -1,0 +1,107 @@
+/* Container Styling */
+.container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Heading */
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Suggestion Section */
+  .suggestion-container {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .no-suggestions {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Buttons */
+  .add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .add-button:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  /* List Styles */
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+  }
+  
+  .list-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
