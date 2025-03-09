@@ -1,5 +1,6 @@
 # Valuefy Project - Meeting Assistant App
-
+click to se actual project
+<a href ="https://valuefy-project-gray.vercel.app/"> frontend </a>
 ## Project Overview
 Professionals often struggle to capture action items and key discussion points during meetings while remaining engaged in conversations. This project aims to solve this problem by developing a mobile application prototype that records voice conversations and converts them into structured digital actions such as tasks, calendar events, and meeting notes.
 
