@@ -1,5 +1,6 @@
 # Valuefy Project - Meeting Assistant App
-
+click to se actual project
+<a href ="https://valuefy-project-gray.vercel.app/"> frontend </a>
 ## Project Overview
 Professionals often struggle to capture action items and key discussion points during meetings while remaining engaged in conversations. This project aims to solve this problem by developing a mobile application prototype that records voice conversations and converts them into structured digital actions such as tasks, calendar events, and meeting notes.
 
@@ -96,42 +97,34 @@ Professionals often struggle to capture action items and key discussion points d
 
 ## License
 This project is licensed under the MIT License.
-
+<pre>
 project-root/
 │
 ├── backend/
 │   ├── server.js              # Express server
-│   ├── config/
-│   │   ├── db.js             # MongoDB connection
-│   ├── models/
-│   │   ├── Task.js           # Task schema
-│   │   ├── CalendarEvent.js  # Calendar schema
-│   ├── routes/
-│   │   ├── upload.js         # Audio upload route
-│   │   ├── tasks.js          # Task management route
-│   │   ├── calendar.js       # Calendar management route
 │   ├── services/
 │   │   ├── speechToText.py   # Whisper speech-to-text service
 │   │   ├── nlpExtraction.py  # NLP extraction service
 │   ├── uploads/              # Uploaded audio files
 │   ├── package.json          # Backend dependencies
 │   ├── .env                  # Environment variables
+│   ├── Dockerfile
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ToDoList.js   # To-Do List component
 │   │   │   ├── Recorder.js   # Audio Recorder component
-│   │   │   ├── Calendar.js   # Custom Calendar component
-│   │   ├── pages/
-│   │   │   ├── Home.js       # Home page
-│   │   │   ├── Tasks.js      # Task management page
-│   │   │   ├── Calendar.js   # Calendar page
+│   │   │   ├── todolist.css
+│   │   │   ├── recorder.css
 │   │   ├── App.js            # Main App component
 │   │   ├── index.js          # React entry point
 │   ├── public/
 │   ├── package.json          # Frontend dependencies
 │   ├── .env                  # Environment variables
+│   ├── Dockerfile
 │
 ├── README.md                 # Project documentation
+│   ├── docker-compose.ymal
 
+</pre>
