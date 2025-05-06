@@ -1,38 +1,22 @@
-import React from 'react';
-import Recorder from './Components/Recorder.js';
-import ToDoList from './Components/todolist.js';
+import React from "react";
+import Recorder from "./Components/Recorder.js";
+import ToDoList from "./Components/todolist.js";
+import "./App.css"; // Import the CSS file
+
 function App() {
   return (
-    <div style={styles.container}>
+    <div className="app-container">
       {/* Left Side - Recorder */}
-      <div style={styles.recorderSection}>
+      <div className="recorder-section">
         <Recorder />
       </div>
 
       {/* Right Side - To-Do List */}
-      <div style={styles.todoSection}>
+      <div className="todo-section">
         <ToDoList />
       </div>
     </div>
   );
 }
-const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "flex-start",
-    gap: "30px",
-    padding: "20px",
-    maxWidth: "900px",
-    margin: "auto",
-  },
-  recorderSection: {
-    flex: 1,
-    minWidth: "300px",
-  },
-  todoSection: {
-    flex: 1.5,
-    minWidth: "400px",
-  },
-};
+
 export default App;

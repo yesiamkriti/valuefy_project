@@ -1,0 +1,49 @@
+/* Full Page Background */
+body {
+    background-color: #f0f4f8; /* Soft bluish-gray for a clean look */
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* App Container */
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  /* Recorder Section */
+  .recorder-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    background: #e8f0fe; /* Soft blue for a gentle feel */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .recorder-section:hover {
+    transform: scale(1.02); /* Slight hover effect */
+  }
+  
+  /* To-Do List Section */
+  .todo-section {
+    flex: 1.5;
+    min-width: 400px;
+    padding: 15px;
+    background: #ffffff; /* Clean white for a contrast */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .todo-section:hover {
+    transform: scale(1.02); /* Slight hover effect */
+  }
+  
